@@ -1,3 +1,5 @@
 ---
+- name: Bootstrap custom environment
+  ansible.builtin.import_playbook: ../vagrant/bootstrap.yml
 - name: Install Kubernetes
   ansible.builtin.import_playbook: playbooks/cluster.yml
